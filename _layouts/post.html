@@ -51,6 +51,8 @@ layout: default
      <script type="text/javascript">
      <!--
  	$(function(){
+	 $('pre').addClass('prettyprint linenums')
+	 
 	 $('.post a').each(function(index,element)
 	     {
 		     	var href = $(this).attr('href');
@@ -70,14 +72,8 @@ layout: default
             		}
 		       
 		});
-	 })
-	-->
-	</script>
-
-
-<script type="text/javascript">
- $(function(){
-  $(document).keydown(function(e) {
+		
+		$(document).keydown(function(e) {
     var url = false;
         if (e.which == 37 || e.which == 74) {  // Left arrow and J
             {% if page.previous %}
@@ -93,6 +89,10 @@ layout: default
             window.location = url;
 	    }
 	    }); 
- })
-</script>
+	 })
+	-->
+	</script>
+
+
+
 
