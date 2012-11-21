@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /:year/:month/:title/
 url: http://linsword20.info
-author: 林建胜
+author: Jason
 pygments: true
 paginate: 16
