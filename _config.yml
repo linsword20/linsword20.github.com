@@ -1,0 +1,10 @@
+markdown: rdiscount
+permalink: /:year/:month/:title/
+url: http://linsword20.info
+author:
+    name:         Jason
+description:      "Jason\'s Blog"
+author_info:      <a href="http://linsword20.info/about">Jason</a>
+
+pygments: true
+paginate: 16
