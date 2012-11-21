@@ -1,8 +1,10 @@
 ﻿---
+
 layout: post
 title: MS-DOS批处理编程
 categories: programming
 tags: dos
+
 ---
 
 ## 1.MS-DOS批处理文件
