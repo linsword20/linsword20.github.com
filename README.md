@@ -1,4 +1,4 @@
-linsword20.info
+﻿linsword20.info
 ==============
 
 This repository contains the source for my personal site at <http://linsword20.info>.
