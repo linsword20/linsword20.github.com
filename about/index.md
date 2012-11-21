@@ -4,6 +4,5 @@ layout: page
 comments: yes
 ---
   
-´ó¼ÒºÃ£¬ÎÒÊÇ[Jason](http://linsword20.info/about)£¬»¶Ó­¹âÁÙÎÒµÄ²©¿Í¡£ÎÒ07Äê±ÏÒµÓÚ[º¼Öİµç×Ó¿Æ¼¼´óÑ§](http://www.hdu.edu.cn/)£¬ÏÖ¾Í¶ÁÓÚ[±±¾©ÓÊµç´óÑ§](http://www.bupt.edu.cn/)¡£
-²©¿ÍÈÔÔÚ²»¶ÏÍêÉÆÖĞ£¬¸ĞĞ»¹Ø×¢£¬ÈçÓĞÎÊÌâ¿ÉÒÔ¸øÎÒ[eMail](http://weibo.com/linsword20)£¬»òÕßÔÚ[Î¢²©](http://weibo.com/linsword20) ¹Ø×¢ÎÒ¡£
-      
+å¤§å®¶å¥½ï¼Œæˆ‘æ˜¯[Jason](http://linsword20.info/about)ï¼Œæ¬¢è¿å…‰ä¸´æˆ‘çš„åšå®¢ã€‚æˆ‘07å¹´æ¯•ä¸šäº[æ­å·ç”µå­ç§‘æŠ€å¤§å­¦](http://www.hdu.edu.cn/)ï¼Œç°å°±è¯»äº[åŒ—äº¬é‚®ç”µå¤§å­¦](http://www.bupt.edu.cn/)ã€‚
+åšå®¢ä»åœ¨ä¸æ–­å®Œå–„ä¸­ï¼Œæ„Ÿè°¢å…³æ³¨ï¼Œå¦‚æœ‰é—®é¢˜å¯ä»¥ç»™æˆ‘[eMail](http://weibo.com/linsword20)ï¼Œæˆ–è€…åœ¨[å¾®åš](http://weibo.com/linsword20) å…³æ³¨æˆ‘ã€‚ 
