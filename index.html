@@ -1,4 +1,4 @@
-﻿---
+---
 title: Jason's Homepage
 layout: page
 ---
@@ -21,12 +21,12 @@ layout: page
 
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a href="/"><前页</a>
+    <a href="/"><ǰҳ</a>
     {% else %}
-    <a href="/page{{paginator.previous_page}}"><前页</a>
+    <a href="/page{{paginator.previous_page}}"><ǰҳ</a>
     {% endif %}
   {% else %}
-    <span class="previous disabled"><前页</span>
+    <span class="previous disabled"><ǰҳ</span>
   {% endif %}
 
       {% if paginator.page == 1 %}
@@ -44,10 +44,10 @@ layout: page
     {% endfor %}
 
   {% if paginator.next_page %}
-    <a class="next" href="/page{{paginator.next_page}}">后页></a>
+    <a class="next" href="/page{{paginator.next_page}}">��ҳ></a>
   {% else %}
-    <span class="next disabled" >后页></span>
+    <span class="next disabled" >��ҳ></span>
   {% endif %}
-  (共{{ paginator.total_posts }}篇)
+  (��{{ paginator.total_posts }}ƪ)
 </div>
 
