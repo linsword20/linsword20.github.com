@@ -1,11 +1,8 @@
 ---
 layout: post
 title: MS-DOS批处理编程
-categories:
-- Programming
-tags:
-- dos
-- bat
+categories: Programming
+tags: [dos, bat]
 ---
 
 ##1.MS-DOS批处理文件
