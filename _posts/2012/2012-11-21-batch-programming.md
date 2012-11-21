@@ -1,9 +1,11 @@
 ﻿---
 layout: post
-title: MS-DOS批处理编程
-categories: programming
-tags: dos
+title: 第一篇Blog，测试
+categories: test
+description: 经好友介绍了解Jekyll，刚刚上手尝试
+tags: a
 ---
-## 1.MS-DOS批处理文件
 
-批处理是一种简化的脚本语言，是由DOS或者Windows系统内嵌的命令解释器CMD解释运行.批处理文件或批处理程序是一个包含若干MS-DOS命令的正文文件，扩展名为.BAT。当在命令提示符下敲入批处理程序的名称时，MS-DOS成组执行此批处理程序中的命令。
+经好友[Jack](https://github.com/xuejiancun)介绍认识到了Jekyll，看了一些网络中的使用Jekyll的Blog的简洁的风格所以及被Jekyll的方便快捷所吸引。在网上看来一些Blog后，最终决定使用这个模板——简洁!感谢[Jack](https://github.com/xuejiancun)介绍这种方式给我，的确挺有意思的，8错!
+
+鉴于这篇Blog只是作学习测试用，Over。。。
