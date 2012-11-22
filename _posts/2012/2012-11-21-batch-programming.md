@@ -101,8 +101,8 @@ IF [NOT] string1==string2 command
 4.1.2 if [not] exist [路径]文件名 待执行的命令  
 如果有指定的文件，则条件成立，运行命令，否则不运行。
 
-rem 表示如果存在c:config.sys文件，则显示它的内容。
-if exist c:config.sys type c:config.sys
+	rem 表示如果存在c:config.sys文件，则显示它的内容。
+	if exist c:config.sys type c:config.sys
 
 
 4.1.3 if errorlevel 待执行的命令  
