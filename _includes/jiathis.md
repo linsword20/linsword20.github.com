@@ -9,4 +9,3 @@
         <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
         <!--<a class="jiathis_counter_style"></a>-->
  </div>
- <div style="clear:both"></div>
