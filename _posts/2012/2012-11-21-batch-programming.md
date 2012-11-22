@@ -98,16 +98,11 @@ IF [NOT] string1==string2 command
 2. string1 未必是参数, 它也可以是环境变量, 循环变量以及其他字符串常量或变量  
 3. command 不是语法所必须的, string2 后跟一个空格就可以构成一个有效的命令行
 
-
-
 4.1.2 if [not] exist [路径]文件名 待执行的命令  
 如果有指定的文件，则条件成立，运行命令，否则不运行。
 
-{% highlight objc %} 
 rem 表示如果存在c:config.sys文件，则显示它的内容。
 if exist c:config.sys type c:config.sys
-{% endhighlight %}
-
 
 
 4.1.3 if errorlevel 待执行的命令  
