@@ -1,29 +1,44 @@
---- layout: default ---
+---
+layout: default
+---
 
-
-<section class="post">{{ content }}</section>
-
-<section class="meta">
-	<span class="author"> <a href="http://linsword20.info">{{
-			site.author }}</a>
-	</span> <span class="time"> / <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{
-			page.date | date:"%Y-%m-%d" }}</time>
-	</span> <br /> <span class="license"> Published under <a rel="license"
-		href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC)
-			BY-NC-SA</a>
-	</span> {% if page.categories %} <span class="categories"> in
-		categories {% for cat in page.categories %} <a
-		href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp; {%
-		endfor %}
-	</span> {% endif %} {% if page.tags %} <span class="tags"> tagged with
-		{% for tag in page.tags %} <a href="/tags/#{{ tag }}"
-		title="{{ tag }}">{{ tag }}</a>&nbsp; {% endfor %}
-	</span> {% endif %}
+<section class="post">
+{{ content }}
 </section>
 
+<section class="meta">
+  <span class="author">
+    <a href="http://linsword20.info">{{ site.author }}</a>
+  </span>
+  <span class="time">
+    /
+    <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
+  </span>
+  <br />
+  <span class="license">
+    Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
+  </span>
+  {% if page.categories %}
+  <span class="categories">
+    in categories
+    {% for cat in page.categories %}
+     <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+    {% endfor %}
+  </span>
+  {% endif %}
+  {% if page.tags %}
+    <span class="tags">
+      tagged with 
+      {% for tag in page.tags %}
+        <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
+      {% endfor %}
+    </span>
+  {% endif %}
+  </section>
 
-Èç¹ûÄú¾õµÃÓĞ°ïÖú£¬¾Í¾¡Çé·ÖÏí»òÕß
-<a href="/about" target="_blank">¹Ø×¢ÎÒ°É</a>
+
+å¦‚æœæ‚¨è§‰å¾—æœ‰å¸®åŠ©ï¼Œå°±å°½æƒ…åˆ†äº«æˆ–è€…
+<a href="/about" target="_blank">å…³æ³¨æˆ‘å§</a>
 :
 <br />
 <div style="float: left; width: 160px;">
@@ -32,7 +47,9 @@
 		src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=75&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1262566221&verifier=9e0cf85c&colors=d6f3f7,FFFFFF,666666,0082cb,ecfbfd&dpc=1"></iframe>
 </div>
 
-{% include jiathis.md %} {% include comments.md %}
+{% include jiathis.md %} 
+
+{% include comments.md %}
 
 <script type="text/javascript">
      <!--
