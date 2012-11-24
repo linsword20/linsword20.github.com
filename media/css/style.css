@@ -20,7 +20,7 @@ margin-right:auto;
 a{color:#dd0000;text-decoration:none;}
 a:hover{color:#333333;text-decoration:underline;}
 a.external {padding-right:13px;background:url('/media/images/icons.gif') no-repeat right 1px;}
-a.external:hover {background-position:right -17px;}
+a.external:hover {background-position:right -19px;}
 hr{margin:.7em 0;border-top:1px dashed #d0d0d0;border-bottom:1px dashed #f9f9f9;}
 p{padding:.5em 0;}
 li{padding:.2em 0;}
