@@ -77,5 +77,5 @@ Call为对其他批处理程序调用的命令，第一个参数为file_copy.bat
 ###4.选择“操作”标签，新建，添加main.bat批处理程序(路径以实际为准)
 ![a](/media/images/batch-file-sync/d.png)  
 ###5. 选择“设置”标签，
-![Imgur](http://i.imgur.com/8CNaU)  
+![Imgur](http://i.imgur.com/8CNaU.png) 
 
