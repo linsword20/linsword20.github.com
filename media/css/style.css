@@ -3,8 +3,9 @@
 *
 * @author linghua.zhang@me.com
 * @link http://lhzhang.com/
-* @update 2011-12-20
 * 
+* @modification linsword20@gmail.com
+* @update 2012-11-25
 * |/ | (~ (~
 * |\.|._)._)
 * --------------------------------- */
@@ -19,8 +20,8 @@ margin-right:auto;
 *{padding:0;margin: 0;border:none;outline:none;}
 a{color:#dd0000;text-decoration:none;}
 a:hover{color:#333333;text-decoration:underline;}
-a.external {padding-right:13px;background:url('/media/images/icons.gif') no-repeat right 0px;}
-a.external:hover {background-position:right -24px;}
+/* a.external {padding-right:13px;background:url('/media/images/icons.gif') no-repeat right 0px;}
+a.external:hover {background-position:right -24px;}*/
 hr{margin:.7em 0;border-top:1px dashed #d0d0d0;border-bottom:1px dashed #f9f9f9;}
 p{padding:.5em 0;}
 li{padding:.2em 0;}
@@ -141,7 +142,7 @@ background: #83BF73;
 }
 
 /**************Ä¿Â¼µ¼º½**************/
-#menuIndex {position:fixed;top:60px;right:20px;width:200px;overflow:auto}
+#menuIndex {position:fixed;top:60px;right:20px;width:200px;overflow:auto;}
 #menuIndex a {display:block;color:#000}
 #menuIndex a:hover {text-decoration:none;color:#FF0000}
 #menuIndex ul li{font-size:13px;margin-bottom:5px;word-wrap:break-word;padding-left:10px;}
