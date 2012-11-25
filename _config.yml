@@ -1,6 +1,8 @@
 markdown: rdiscount
 permalink: /:year/:month/:title/
 url: http://linsword20.info
-author: Jason
+author: Jason 
+email: linsword20@gmail.com
+weibo: <a href="http://weibo.com/linsword20" target="_blank">Î¢²©</a>
 pygments: true
 paginate: 16

@@ -1,8 +1,7 @@
 ---
 title: About me
 layout: page
-comments: yes
 ---
   
-大家好，我是[Jason](http://linsword20.info/about)，欢迎光临我的博客。我07年毕业于[杭州电子科技大学](http://www.hdu.edu.cn/)，现就读于[北京邮电大学](http://www.bupt.edu.cn/)。
-博客仍在不断完善中，感谢关注，如有问题可以给我[eMail]<linsword20@gmail.com>，或者在[微博](http://weibo.com/linsword20) 关注我。 
+大家好，我是{{ site.author.author_info }}，欢迎光临我的博客。我07年毕业于<a href="http://www.hdu.edu.cn/" target="_blank" class="external">杭州电子科技大学</a>，现就读于<a href="http://www.bupt.edu.cn/" target="_blank" class="external">北京邮电大学</a>。
+博客仍在不断完善中，感谢关注，如有问题可以给我<a href="" title="邮箱" onclick="alert('linsword20 在 Gmail，你懂得！');return false;">eMail</a>，或者在<a href="http://weibo.com/linsword20" title="Jason_0" target="_blank" class="external">微博</a>关注我。 
