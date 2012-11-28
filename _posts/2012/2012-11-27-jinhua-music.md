@@ -10,4 +10,4 @@ tags:
 ##十月
 <embed src="http://player.opengg.me/player.php/sid/XMzE3MDY4MA==/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 ##金华Style
-<embed src="http://player.opengg.me/player.php/sid/XNDc5MDAzNzY4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+<embed src="http://player.opengg.me/player.php/sid/XNDc5Njk1NTQ0/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
