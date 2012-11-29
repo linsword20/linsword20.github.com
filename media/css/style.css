@@ -149,7 +149,8 @@ background: #83BF73;
 	/* …Ë÷√“ı”∞ */
 	-webkit-box-shadow:1px 1px 3px #292929;
 	-moz-box-shadow:1px 1px 3px #292929;
-	box-shadow:1px 1px 3px #292929;}
+	box-shadow:1px 1px 3px #292929;
+	}
 #menuIndex a {display:block;color:#000}
 #menuIndex a:hover {text-decoration:none;color:#FF0000}
 
@@ -157,4 +158,3 @@ background: #83BF73;
 #menuIndex ul li.on{background-color:#EAEAEA}
 #menuIndex li.h1{font-size:15px;font-weight:normal;padding-left:0;margin-bottom:10px;}
 #menuIndex li.h3{padding-left:25px;}
-
