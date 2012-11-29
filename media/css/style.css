@@ -1,13 +1,9 @@
 /*------------------------------------
-* sext
-*
 * @author linghua.zhang@me.com
 * @link http://lhzhang.com/
 * 
 * @modification linsword20@gmail.com
-* @update 2012-11-25
-* |/ | (~ (~
-* |\.|._)._)
+* @update 2012-11-29
 * --------------------------------- */
 
 @import url(http://fonts.googleapis.com/css?family=Galdeano);
@@ -37,7 +33,7 @@ blockquote p{margin:0;padding:.5em 0;}
 #container{width:720px;margin:2em auto;display:block;padding:0 2em;}
 .content{font-size:16px;line-height:24px;}
 .content h1{padding:.5em 0;}
-.content img{max-width:600px;display:block;margin:4px auto;-webkit-box-shadow:#999 1px 1px 4px;-moz-box-shadow:#999 1px 1px 4px;box-shadow:#999 1px 1px 4px;}
+.content img{max-width:600px;display:block;margin:4px auto;-webkit-box-shadow:3px 3px 6px #333;-moz-box-shadow:3px 3px 6px #333;box-shadow:3px 3px 6px #333;}
 #tag_cloud{margin-bottom: 1em;}
 #tag_cloud a:hover{color:#333333 !important;text-decoration:none;}
 .listing-item,.listing-seperator{list-style-type:none;}
@@ -54,10 +50,11 @@ nav{font-family:"Electrolize",sans-serif;font-size:1.1em;text-transform:uppercas
 nav a{display:block;padding:.7em 1em;color:#000000;}
 nav a:hover{background-color:#ff0000;text-decoration:none;color:#f9f9f9;-webkit-transition:color .2s linear;}
 .post{padding:0.9em;
--webkit-box-shadow:1px 1px 3px #292929;
-	-moz-box-shadow:1px 1px 3px #292929;
-	box-shadow:1px 1px 3px #292929;}
-.item{padding:.9em 0em;}
+	-webkit-box-shadow:1px 1px 2px #292929;
+	-moz-box-shadow:1px 1px 2px #292929;
+	box-shadow:1px 1px 2px #292929;
+	}
+.item{padding:0.9em;}
 h1{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.8em;color:#000;line-height: 150%;}
 h2{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.4em;color:#111;line-height: 200%;}
 h3{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.2em;color:#222;line-height: 150%;}
@@ -147,7 +144,7 @@ background: #83BF73;
 
 /**************Ä¿Â¼µ¼º½**************/
 #menuIndex {
-	position:fixed;top:60px;right:20px;width:200px;overflow:auto;
+	position:fixed;top:80px;right:20px;width:200px;overflow:auto;
 	-webkit-border-radius: 3px 3px 3px 3px;
 	-moz-border-radius: 3px 3px 3px 3px;
 	border-radius: 3px 3px 3px 3px;
@@ -165,6 +162,6 @@ background: #83BF73;
 #menuIndex a:hover {text-decoration:none;color:#FF0000}
 
 #menuIndex ul li{font-size:13px;margin-bottom:5px;word-wrap:break-word;padding-left:10px;}
-#menuIndex ul li.on{background-color:#BBFFFF;font-weight:bold;}
+#menuIndex ul li.on{background-color:#fff;font-weight:bold;}
 #menuIndex li.h1{font-size:15px;font-weight:normal;padding-left:0;margin-bottom:10px;}
 #menuIndex li.h3{padding-left:25px;}
