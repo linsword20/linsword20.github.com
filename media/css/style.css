@@ -39,20 +39,19 @@ blockquote p{margin:0;padding:.5em 0;}
 .listing-item,.listing-seperator{list-style-type:none;}
 .listing-item a{
 	padding:.2em 1em;
-
 }
 
 .listing-item time{color:#999999;}
 .listing-seperator{font-weight:bold;}
 .meta{text-align:right;font-size:12px;}
-header{padding:.5em 0;border-bottom: 1px solid #cccccc;}
+header{padding:.5em 0;}
 nav{font-family:"Electrolize",sans-serif;font-size:1.1em;text-transform:uppercase;float:left;margin-left:-14em;width:12em;text-align:right;}
 nav a{display:block;padding:.7em 1em;color:#000000;}
 nav a:hover{background-color:#ff0000;text-decoration:none;color:#f9f9f9;-webkit-transition:color .2s linear;}
 .post{padding:0.9em;
-	-webkit-box-shadow:1px 1px 2px #292929;
-	-moz-box-shadow:1px 1px 2px #292929;
-	box-shadow:1px 1px 2px #292929;
+	-webkit-box-shadow:1px 1px 1.5px #D1D1D1, -1px -1px 1.5px #D1D1D1;
+	-moz-box-shadow:1px 1px 1.5px #D1D1D1,-1px -1px 1.5px #D1D1D1;
+	box-shadow:1px 1px 1px #D1D1D1,-1px -1px 1.5px #D1D1D1;
 	}
 .item{padding:0.9em;}
 h1{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.8em;color:#000;line-height: 150%;}
@@ -91,15 +90,15 @@ footer a:hover {
 }
 
 .label {
-font-size:11.25px;
-font-weight:700;
-color:#fff;
-text-transform:uppercase;
-background-color:#999;
--webkit-border-radius:3px;
--moz-border-radius:3px;
-border-radius:3px;
-padding:1px 3px 2px;
+	font-size:11.25px;
+	font-weight:700;
+	color:#fff;
+	text-transform:uppercase;
+	background-color:#999;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	padding:1px 3px 2px;
 }
 
 .label-important {
