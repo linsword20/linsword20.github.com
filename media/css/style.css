@@ -161,6 +161,6 @@ background: #83BF73;
 #menuIndex a:hover {text-decoration:none;color:#FF0000}
 
 #menuIndex ul li{font-size:13px;margin-bottom:5px;word-wrap:break-word;padding-left:10px;}
-#menuIndex ul li.on{background-color:#fff;font-weight:bold;}
+#menuIndex ul li.on{background-color:#D1D1D1;font-weight:bold;}
 #menuIndex li.h1{font-size:15px;font-weight:normal;padding-left:0;margin-bottom:10px;}
 #menuIndex li.h3{padding-left:25px;}
