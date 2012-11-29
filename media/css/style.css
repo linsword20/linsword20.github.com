@@ -53,7 +53,7 @@ nav a:hover{background-color:#ff0000;text-decoration:none;color:#f9f9f9;-webkit-
 	-moz-box-shadow:1px 1px 1.5px #D1D1D1,-1px -1px 1.5px #D1D1D1;
 	box-shadow:1px 1px 1px #D1D1D1,-1px -1px 1.5px #D1D1D1;
 	}
-.item{padding:0.9em;}
+.item{padding:0.9em 0;}
 h1{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.8em;color:#000;line-height: 150%;}
 h2{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.4em;color:#111;line-height: 200%;}
 h3{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.2em;color:#222;line-height: 150%;}
