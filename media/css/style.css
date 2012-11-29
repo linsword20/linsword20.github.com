@@ -142,19 +142,25 @@ background: #83BF73;
 }
 
 /**************目录导航**************/
-#menuIndex {position:fixed;top:60px;right:20px;width:220px;overflow:auto;
+#menuIndex {
+	position:fixed;top:60px;right:20px;width:200px;overflow:auto;
 	-webkit-border-radius: 3px 3px 3px 3px;
-	-moz-border-radius: 4px 4px 4px 4px;
-	border-radius: 4px 4px 4px 4px;}
-#menuIndex:hover {background-color:#fff;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	opacity: .3;
+}
+#menuIndex:hover {
+	background-color:#FFF;
 	/* 设置阴影 */
 	-webkit-box-shadow:1px 1px 3px #292929;
 	-moz-box-shadow:1px 1px 3px #292929;
-	box-shadow:1px 1px 3px #292929;}
+	box-shadow:1px 1px 3px #292929;
+	opacity: 1;
+}
 #menuIndex a {display:block;color:#000}
 #menuIndex a:hover {text-decoration:none;color:#FF0000}
 
 #menuIndex ul li{font-size:13px;margin-bottom:5px;word-wrap:break-word;padding-left:10px;}
-#menuIndex ul li.on{background-color:#EAEAEA;}
+#menuIndex ul li.on{font-weight:bold;}
 #menuIndex li.h1{font-size:15px;font-weight:normal;padding-left:0;margin-bottom:10px;}
 #menuIndex li.h3{padding-left:25px;}
