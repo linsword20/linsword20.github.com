@@ -1,5 +1,5 @@
 ---
-title: About me
+title: A Little About Me.
 layout: page
 ---
   
