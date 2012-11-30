@@ -17,16 +17,16 @@
 		$(function(){
 			sourceDate = new Date(document.getElementById("time").innerHTML)
 			var date = new Date();
-			var offset = date.getTimezoneOffset()*60000;  - sourceDate.getTimezoneOffset()*60000;
+			var offset = date.getTimezoneOffset()*60000 - sourceDate.getTimezoneOffset()*60000;
 			desDate = new Date(date.getTime(); + offset)
-			if (!/*@cc_on!@*/0) {  year = desDate.getYear() + 1900 + "-"; }
+			if (!/*@cc_on!@*/0) { year = desDate.getYear() + 1900 + "-"; }
 			else{ year = desDate.getYear() + "-"; }
 			month = desDate.getMonth() < 9 ? "0"+desDate.getMonth() + "-": desDate.getMonth() +"-";
 			day = desDate.getDate() < 9 ? "0"+desDate.getDate() + " ": desDate.getDate() + " "; 
 			hour = desDate.getHours() + ":" ;
 			minute = desDate.getMinutes() < 9 ? "0"+desDate.getMinutes() : desDate.getMinutes();
 			document.getElementById("time").innerHTML  = year +month + day + hour + minute + " cst";
-			})
+			});
 	</script>
 </head>
 
@@ -67,19 +67,12 @@
 			js.setAttribute('type', 'text/javascript');
 			js.setAttribute('src', file);
 			_doc.appendChild(js);
-
-			if (!/*@cc_on!@*/0) { //if not IE
-				//Firefox2bFirefox3bSafari3.1+bOpera9.6+ support js.onload
-				js.onload = function() {
-					callback();
-				}
-			} else {
-				//IE6bIE7 support js.onreadystatechange
+			if (!/*@cc_on!@*/0){ //if not IE, Firefox2bFirefox3bSafari3.1+bOpera9.6+ support js.onload
+				js.onload = function() { callback();}
+			} 
+			else {//IE6bIE7 support js.onreadystatechange
 				js.onreadystatechange = function() {
-					if (js.readyState == 'loaded'
-							|| js.readyState == 'complete') {
-						callback();
-					}
+				if (js.readyState == 'loaded'|| js.readyState == 'complete') { callback();}
 				}
 			}
 			return false;
