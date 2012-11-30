@@ -26,7 +26,13 @@
 			
 			var offset = localOffset - sourceDate.getTimezoneOffset()*60000;
 			desDate = new Date(localtime + offset)
+			if (!/*@cc_on!@*/0) { 
 			year = desDate.getYear() + 1900 + "-";
+			}
+			else
+			{
+				year = desDate.getYear() + "-";
+			}
 			month = desDate.getMonth() < 9 ? "0"+desDate.getMonth() + "-": desDate.getMonth() +"-";
 			day = desDate.getDate() < 9 ? "0"+desDate.getDate() + " ": desDate.getDate() + " "; 
 			hour = desDate.getHours() + ":" ;
