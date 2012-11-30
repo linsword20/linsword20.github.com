@@ -17,10 +17,12 @@
 	
 	<script type="text/javascript">
 		$(function(){
-			var sourceDate = new Date( document.getElementById("time").innerHTML);
+			
+				 sourceDate = new Date(document.getElementById("time").innerHTML)
+
 			var date = new Date();
 			var localtime = date.getTime();
-			var localOffset = date.getTimezoneOffset()*60000; //与UTC的毫秒偏移
+			var localOffset = date.getTimezoneOffset()*60000; 
 			
 			var offset = localOffset - sourceDate.getTimezoneOffset()*60000;
 			desDate = new Date(localtime + offset)
@@ -29,12 +31,14 @@
 			day = desDate.getDate() < 9 ? "0"+desDate.getDate() + " ": desDate.getDate() + " "; 
 			hour = desDate.getHours() + ":" ;
 			minute = desDate.getMinutes() < 9 ? "0"+desDate.getMinutes() : desDate.getMinutes();
-			
 			document.getElementById("time").innerHTML  = year +month + day + hour + minute + " cst";
 			})
+			
+			
+			
+			
 	</script>
-	
-	
+
 </head>
 <body>
 	<div id="container">
@@ -60,7 +64,7 @@
 				{% if {{date:"%Y"}} == "2012" %}
 					- {{site.time | date:"%Y"}} 
 				{% endif %}
-				by <a href="/about/">Jason</a> | <span class="label label-info" id="time">{{ site.time }}</span></small>
+				by <a href="/about/">Jason</a> | <span class="label label-info" id="time">{{site.time | date:"%a %b %d %H:%M:%S"}} UTC+0800 {{site.time | date:"%Y"}}</span></small>
 			</p>
 		</footer>
 
