@@ -17,7 +17,7 @@
 	
 	<script type="text/javascript">
 		$(function(){
-			var sourceDate = new Date();
+			var sourceDate = new Date( document.getElementById("time").innerText);
 			var date = new Date();
 			var localtime = date.getTime();
 			var localOffset = date.getTimezoneOffset()*60000; //与UTC的毫秒偏移
@@ -60,7 +60,7 @@
 				{% if {{date:"%Y"}} == "2012" %}
 					- {{site.time | date:"%Y"}} 
 				{% endif %}
-				by <a href="/about/">Jason</a> | <span class="label label-info" id="time"></span></small>
+				by <a href="/about/">Jason</a> | <span class="label label-info" id="time">{{ site.time }}</span></small>
 			</p>
 		</footer>
 
