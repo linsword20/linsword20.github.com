@@ -15,35 +15,7 @@
 		var BYB = {};
 	</script>
 	
-	<script type="text/javascript">
-		$(function(){
-			
-				 sourceDate = new Date(document.getElementById("time").innerHTML)
-
-			var date = new Date();
-			var localtime = date.getTime();
-			var localOffset = date.getTimezoneOffset()*60000; 
-			
-			var offset = localOffset - sourceDate.getTimezoneOffset()*60000;
-			desDate = new Date(localtime + offset)
-			if (!/*@cc_on!@*/0) { 
-			year = desDate.getYear() + 1900 + "-";
-			}
-			else
-			{
-				year = desDate.getYear() + "-";
-			}
-			month = desDate.getMonth() < 9 ? "0"+desDate.getMonth() + "-": desDate.getMonth() +"-";
-			day = desDate.getDate() < 9 ? "0"+desDate.getDate() + " ": desDate.getDate() + " "; 
-			hour = desDate.getHours() + ":" ;
-			minute = desDate.getMinutes() < 9 ? "0"+desDate.getMinutes() : desDate.getMinutes();
-			document.getElementById("time").innerHTML  = year +month + day + hour + minute + " cst";
-			})
-			
-			
-			
-			
-	</script>
+	
 
 </head>
 <body>
@@ -101,23 +73,20 @@
 			return false;
 		}
 	</script>
-
-
 	<script type="text/javascript">
-		//google统计代码
-		var _gaq = _gaq || [];
-		_gaq.push([ '_setAccount', 'UA-36373965-1' ]);
-		_gaq.push([ '_trackPageview' ]);
-		(function() {
-			var ga = document.createElement('script');
-			ga.type = 'text/javascript';
-			ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-					: 'http://www')
-					+ '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(ga, s);
-		})();
+		$(function(){
+			sourceDate = new Date(document.getElementById("time").innerHTML)
+			var date = new Date();
+			var offset = date.getTimezoneOffset()*60000;  - sourceDate.getTimezoneOffset()*60000;
+			desDate = new Date(date.getTime(); + offset)
+			if (!/*@cc_on!@*/0) {  year = desDate.getYear() + 1900 + "-"; }
+			else{ year = desDate.getYear() + "-"; }
+			month = desDate.getMonth() < 9 ? "0"+desDate.getMonth() + "-": desDate.getMonth() +"-";
+			day = desDate.getDate() < 9 ? "0"+desDate.getDate() + " ": desDate.getDate() + " "; 
+			hour = desDate.getHours() + ":" ;
+			minute = desDate.getMinutes() < 9 ? "0"+desDate.getMinutes() : desDate.getMinutes();
+			document.getElementById("time").innerHTML  = year +month + day + hour + minute + " cst";
+			})
 	</script>
 </body>
 </html>
