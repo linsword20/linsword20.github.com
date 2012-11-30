@@ -27,7 +27,7 @@
 			year = desDate.getYear() + 1900 + "-";
 			month = desDate.getMonth() < 9 ? "0"+desDate.getMonth() + "-": desDate.getMonth() +"-";
 			day = desDate.getDate() < 9 ? "0"+desDate.getDate() + " ": desDate.getDate() + " "; 
-			hour = desDate.getHours() + ":" + desDate.getHours() ;
+			hour = desDate.getHours() + ":" ;
 			minute = desDate.getMinutes() < 9 ? "0"+desDate.getMinutes() : desDate.getMinutes();
 			
 			document.getElementById("time").innerText  = year +month + day + hour + minute + " cst";
