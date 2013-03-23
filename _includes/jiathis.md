@@ -4,6 +4,6 @@
         <!--<a class="jiathis_button_readitlater"></a>-->
         <!--<a class="jiathis_button_instapaper"></a>-->
         
-        <a class="jiathis_counter_style"></a>
+      
  </div><br>
 <!-- JiaThis Button END -->
