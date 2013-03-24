@@ -165,3 +165,12 @@ background: #83BF73;
 #menuIndex ul li.on a:hover{text-decoration:none;color:#FF0000}
 #menuIndex li.h1{font-size:15px;font-weight:normal;padding-left:0;margin-bottom:10px;}
 #menuIndex li.h3{padding-left:25px;}
+
+/*鼠标滑过弹出信息*/
+#toolTip{
+				padding:4px;
+				background-color: #fff;
+				display:none;
+				position:absolute;
+				-webkit-box-shadow:3px 3px 3px #333;-moz-box-shadow:3px 3px 3px #333;box-shadow:3px 3px 3px #333;
+}
