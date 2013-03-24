@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 数据类型float
+title: Float的二进制表示
 categories: programming
-description: 
-tags: datatype
+description: float存储机制笔记 
+tags: 
+- 浮点型
+- float
+- C/C++
 ---
 这两天研究《程序员面试宝典》的时候，碰到一道关于C/C++中float的题:  
 	
