@@ -9,9 +9,12 @@
 @import url(http://fonts.googleapis.com/css?family=Galdeano);
 @import url(http://fonts.googleapis.com/css?family=Electrolize);
 @import url(http://fonts.googleapis.com/css?family=Cuprum);
+html{
+height: 100%;
+}
 body{font-size:14px;word-spacing:1px;
 	margin-left:auto;
-margin-right:auto;
+margin-right:auto;height: 100%;min-height: 100%;
 	font-family:"Galdeano","Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;color:#000000;background-color:#ffffff;}
 *{padding:0;margin: 0;border:none;outline:none;}
 a{color:#dd0000;text-decoration:none;}
@@ -30,8 +33,9 @@ pre ol{margin-left:27px;list-style-type:decimal;}
 blockquote{display:block;text-align:justify;border-left:4px solid #eeeeee;}
 blockquote{margin:1em 0em;padding-left:1.5em;}
 blockquote p{margin:0;padding:.5em 0;}
-#container{width:720px;margin:2em auto;display:block;padding:0 2em;}
-.content{font-size:16px;line-height:24px;}
+#main {padding-bottom: 30px;}
+#container{width:720px;height: auto;min-height:100%;margin:2em auto;display:block;padding:0 2em;position: relative;}
+.content{font-size:16px;line-height:24px;padding-bottom: 160px;}
 .content h1{padding:.5em 0;}
 .content img{max-width:600px;display:block;margin:4px auto;-webkit-box-shadow:3px 3px 6px #333;-moz-box-shadow:3px 3px 6px #333;box-shadow:3px 3px 6px #333;}
 #tag_cloud{margin-bottom: 1em;}
@@ -45,7 +49,9 @@ blockquote p{margin:0;padding:.5em 0;}
 .listing-seperator{font-weight:bold;}
 .meta{text-align:right;font-size:12px;}
 header{padding:.5em 0;}
-nav{font-family:"Electrolize",sans-serif;font-size:1.1em;text-transform:uppercase;float:left;margin-left:-14em;width:12em;text-align:right;}
+nav{font-family:"Electrolize",sans-serif;font-size:1.1em;text-transform:uppercase;float:left;margin-left:-14em;width:12em;text-align:right;
+position:relative;
+}
 nav a{display:block;padding:.7em 1em;color:#000000;}
 nav a:hover{background-color:#ff0000;text-decoration:none;color:#f9f9f9;-webkit-transition:color .2s linear;}
 .post{padding:0.9em;
@@ -63,9 +69,15 @@ embed,object,iframe{display:block;margin:4px auto;}
 
 footer{
 display:block;
-border-top: 1px dashed #CCC;
+position: relative;
+margin-top: -30px; /* footer高度的负值 */
+height: 30px;
+clear:both;
+background-color:#222;
 }
-
+footer p {
+text-align: center;
+}
 footer small {
 font-size: 13px;
 color: #999;
@@ -74,18 +86,19 @@ color: #999;
 footer a {
 margin: 1px;
 border: 1px solid rgba(1,1,1,0);
-border-bottom: 1px dashed #BBB;
 color: #B9221F;
 text-decoration: none;
 }
 
 footer a:hover {
-	color: rgba(250,250,250,1.0) !important; 
-    -webkit-border-radius: 4px;
+color:#fff;
+    -webkit-border-radius: 4px;-moz-box-shadow: 4px;box-shadow: 4px;
     border: 1px solid rgba(0,0,0,0.45);
-    text-shadow: rgba(0,0,0,0.6) 0px -1px 0px;
+    text-shadow: rgba(1,1,1,0.6) 0px -1px 0px;
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(110,110,110,1.0)), to(rgba(100,100,100,1.0)));
 	-webkit-box-shadow: rgba(0,0,0,1.0) 0px 0px 2px,rgba(255,255,255,0.15) 0px 1px 1px inset;
+    -moz-box-shadow: rgba(0,0,0,1.0) 0px 0px 2px,rgba(255,255,255,0.15) 0px 1px 1px inset;
+    box-shadow:rgba(0,0,0,1.0) 0px 0px 2px,rgba(255,255,255,0.15) 0px 1px 1px inset;
 	text-decoration: none;
 }
 
