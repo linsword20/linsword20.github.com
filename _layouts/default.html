@@ -35,13 +35,7 @@
 		
 
 	</div>
-    <footer>
-			<p>
-				<small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> & 
-                <a href="http://pages.github.com">GitHub</a> | Copyright 2012 - {{site.time | date:"%Y"}} 
-				by <a href="/about/">Jason</a> | <span class="label label-info" id="time">{{site.time | date:"%a %b %d %H:%M:%S"}} UTC+0800 {{site.time | date:"%Y"}}</span></small>
-			</p>
-		</footer>
+    
 	<script type="text/javascript">
 		BYB.includeScript = function(file, callback) {
 			var _doc = document.getElementsByTagName('head')[0];
@@ -63,20 +57,6 @@
 	
 	<script type="text/javascript">
 		$(function(){
-			//时区换算
-			sourceDate = new Date(document.getElementById("time").innerHTML)
-			var date = new Date();
-			var offset = date.getTimezoneOffset()*60000 - sourceDate.getTimezoneOffset()*60000;
-			desDate = new Date(date.getTime() + offset)
-			if (!/*@cc_on!@*/0) { year = desDate.getYear() + 1900 + "-"; }
-			else if(document.documentMode == 10){year = desDate.getYear() + 1900 + "-"; }
-			else{ year = desDate.getYear() + "-"; }
-			month = desDate.getMonth() < 9 ? "0"+desDate.getMonth() + 1 + "-": desDate.getMonth() + 1 +"-";
-			day = desDate.getDate() < 9 ? "0"+desDate.getDate() + " ": desDate.getDate() + " "; 
-			hour = desDate.getHours() + ":" ;
-			minute = desDate.getMinutes() < 9 ? "0"+desDate.getMinutes() : desDate.getMinutes();
-			document.getElementById("time").innerHTML  = year +month + day + hour + minute + " cst";
-			
 			//非本站链接增加_blank
 			$(' a').each(function(index,element)
 			{
