@@ -1,9 +1,18 @@
 ---
-title: A Little About Me
+title: About Me
 layout: page
 ---
-大家好，我是{{ site.author }}，欢迎光临我的博客。我07年毕业于[杭州电子科技大学](http://www.hdu.edu.cn)，
-现就读于[北京邮电大学](http://www.bupt.edu.cn)。
-博客仍在不断完善中，感谢关注，如有问题可以给我
-<span id="x"><a href="" name="linsword20@gmail.com">Email</a></span><span id="toolTip" style="display: none;"></span>，
-或者在{{site.weibo}}关注我。
+
+大家好，我是{{ site.author }}，博客仍在不断完善中，感谢关注。
+<a href="mailto:{{site.email}}">Email</a>/{{site.weibo}}/[Douban](http://www.douban.com/people/61633006/)  
+最近在看：
+<div align="center">
+<script type="text/javascript" src="http://www.douban.com/service/badge/61633006/?show=collection&amp;n=15&amp;columns=5&amp;picsize=medium&amp;hidelogo=yes&amp;hideself=yes" ></script> 
+</div>
+<script type="text/javascript">
+$(function(){
+	$('td').attr('width','130');
+})
+</script>
+
+{% include jiathis.md %} 

@@ -71,6 +71,7 @@ blockquote p{margin:0;padding:.5em 0;}
 
 #tag_cloud{margin-bottom: 1em;}
 #tag_cloud a:hover{color:#333333 !important;text-decoration:none;}
+
 .listing-item,.listing-seperator{list-style-type:none;}
 .listing-item a{
 	padding:.2em 1em;
@@ -79,9 +80,18 @@ blockquote p{margin:0;padding:.5em 0;}
 .listing-item time{color:#999999;}
 .listing-seperator{font-weight:bold;}
 .meta{text-align:right;font-size:12px;}
+
 header{padding:.5em 0;}
-nav{font-family:"Electrolize",sans-serif;font-size:1.1em;text-transform:uppercase;float:left;margin-left:-14em;width:12em;text-align:right;
-position:relative;
+
+nav{
+    font-family:"Electrolize",sans-serif;
+    font-size:1.1em;
+    text-transform:uppercase;
+    float:left;
+    margin-left:-14em;
+    width:12em;
+    text-align:right;
+    position:relative;
 }
 nav a{display:block;padding:.7em 1em;color:#000000;}
 nav a:hover{background-color:#ff0000;text-decoration:none;color:#f9f9f9;-webkit-transition:color .2s linear;}
@@ -94,7 +104,7 @@ nav a:hover{background-color:#ff0000;text-decoration:none;color:#f9f9f9;-webkit-
     border-radius:4px 4px 4px 4px;
 }
 
-.item{padding:0.9em 0;}
+
 h1{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.8em;color:#000;line-height: 150%;}
 h2{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.4em;color:#111;line-height: 200%;}
 h3{font-family:"Cuprum","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:1.2em;color:#222;line-height: 150%;}
@@ -152,18 +162,6 @@ background: #83BF73;
 #menuIndex ul li.on a:hover{text-decoration:none;color:#FF0000}
 #menuIndex li.h1{font-size:15px;font-weight:normal;padding-left:0;margin-bottom:10px;}
 #menuIndex li.h3{padding-left:25px;}
-
-/*鼠标滑过弹出信息*/
-#toolTip{
-	padding:4px;	
-	background-color: #fff;
-	display:none;
-	position:absolute;
-	-webkit-box-shadow:3px 3px 3px #333;
-    -moz-box-shadow:3px 3px 3px #333;
-    box-shadow:3px 3px 3px #333;
-}
-
 
 /****页脚footer
 footer{
