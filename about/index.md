@@ -14,5 +14,3 @@ $(function(){
 	$('td').attr('width','130');
 })
 </script>
-
-{% include jiathis.md %} 
