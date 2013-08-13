@@ -8,7 +8,9 @@ tags:
 - 类加载器
 - Java
 ---
- ##**简介**：在编写java代码的时候经常会遇到java.lang.ClassNotFoundExcetpion，它涉及到了java的类加载器概念。类加载器（ClassLoader）是 Java中的一个很重要的概念，它负责加载 Java 类的字节代码到 Java 虚拟机中，是java技术体系中比较核心的部分。虽然我们很多时候并不需要直接与类加载器打交道，不过如果对类加载器背后的机理有一定的了解，在调试ClassNotFoundException和 NoClassDefFoundError等异常的时候就容易多了，也有助于我们更好的了解JVM。
+
+##**简介**
+ 在编写java代码的时候经常会遇到java.lang.ClassNotFoundExcetpion，它涉及到了java的类加载器概念。类加载器（ClassLoader）是 Java中的一个很重要的概念，它负责加载 Java 类的字节代码到 Java 虚拟机中，是java技术体系中比较核心的部分。虽然我们很多时候并不需要直接与类加载器打交道，不过如果对类加载器背后的机理有一定的了解，在调试ClassNotFoundException和 NoClassDefFoundError等异常的时候就容易多了，也有助于我们更好的了解JVM。
 
 ##**1 Java类加载器体系结构** 
 ###Java类加载器分类 
