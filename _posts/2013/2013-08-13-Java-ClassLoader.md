@@ -19,25 +19,25 @@ Java中的类加载器可以分为两类，一种是Java虚拟机自带类加载
 *  系统类加载器（system class loader）：它根据 Java 应用的类路径（CLASSPATH）来加载 Java 类。一般来说，Java 应用的类都是由它来完成加载的。
 可以通过 ClassLoader.getSystemClassLoader()来获取它。 
 
-		//TestClassLoader.java
-		package info.jason.classloader;
-		class A
-		{}
-		public class TestClassLoader
+	//TestClassLoader.java
+	package info.jason.classloader;
+	class A
+	{}
+	public class TestClassLoader
+	{
+		public static void main(String[] args) throws Exception
 		{
-			public static void main(String[] args) throws Exception
-			{
-				//引导类加载器负责加载Java核心库
-				//输出：null 
-				//引导类加载器不是Java实现，所以为null
-				System.out.println(Class.forName("java.lang.String").
-						getClassLoader());			
-				//自定义类A由系统类加载器加载
-				//输出：sun.misc.Launcher$AppClassLoader@1e3118a
-				System.out.println(Class.forName("info.jason.classloader.A").
-						getClassLoader());
-			}
-		} 
+			//引导类加载器负责加载Java核心库
+			//输出：null 
+			//引导类加载器不是Java实现，所以为null
+			System.out.println(Class.forName("java.lang.String").
+					getClassLoader());			
+			//自定义类A由系统类加载器加载
+			//输出：sun.misc.Launcher$AppClassLoader@1e3118a
+			System.out.println(Class.forName("info.jason.classloader.A").
+					getClassLoader());
+		}
+	} 
 
 	
 
