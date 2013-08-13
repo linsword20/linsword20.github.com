@@ -8,34 +8,36 @@ tags:
 - 类加载器
 - Java
 ---
-
  ##**简介**：在编写java代码的时候经常会遇到java.lang.ClassNotFoundExcetpion，它涉及到了java的类加载器概念。类加载器（ClassLoader）是 Java中的一个很重要的概念，它负责加载 Java 类的字节代码到 Java 虚拟机中，是java技术体系中比较核心的部分。虽然我们很多时候并不需要直接与类加载器打交道，不过如果对类加载器背后的机理有一定的了解，在调试ClassNotFoundException和 NoClassDefFoundError等异常的时候就容易多了，也有助于我们更好的了解JVM。
 
 ##**1 Java类加载器体系结构** 
 ###Java类加载器分类 
 Java中的类加载器可以分为两类，一种是Java虚拟机自带类加载器，另一种是有开发人员编写的用户自定义类加载器。其中Java虚拟机自带类加载器有以下三个： 
 
-- 引导类加载器（bootstrap class loader）：它用来加载 Java 的核心库，是用原生代码（c++）来实现的，并不继承自 java.lang.ClassLoader。 
-- 扩展类加载器（extensions class loader）：它用来加载 Java 的扩展库。Java 虚拟机的实现会提供一个扩展库目录。该类加载器在此目录里面查找并加载 Java 类。
-- 系统类加载器（system class loader）：它根据 Java 应用的类路径（CLASSPATH）来加载 Java 类。一般来说，Java 应用的类都是由它来完成加载的。可以通过 ClassLoader.getSystemClassLoader()来获取它。 
- 
-	package info.jason.classloader;
-	class A{}
-	public class TestClassLoader
-	{
-		public static void main(String[] args) throws Exception
+>*  引导类加载器（bootstrap class loader）：它用来加载 Java 的核心库，是用原生代码（c++）来实现的，并不继承自 java.lang.ClassLoader。 
+*  扩展类加载器（extensions class loader）：它用来加载 Java 的扩展库。Java 虚拟机的实现会提供一个扩展库目录。该类加载器在此目录里面查找并加载 Java 类。
+*  系统类加载器（system class loader）：它根据 Java 应用的类路径（CLASSPATH）来加载 Java 类。一般来说，Java 应用的类都是由它来完成加载的。
+可以通过 ClassLoader.getSystemClassLoader()来获取它。 
+
+		//TestClassLoader.java
+		package info.jason.classloader;
+		class A
+		{}
+		public class TestClassLoader
 		{
-			//引导类加载器负责加载Java核心库
-			//输出：null 
-			//引导类加载器不是Java实现，所以为null
-			System.out.println(Class.forName("java.lang.String").
-					getClassLoader());	
-			//自定义类A由系统类加载器加载
-			//输出：sun.misc.Launcher$AppClassLoader@1e3118a
-			System.out.println(Class.forName("info.jason.classloader.A").
-					getClassLoader());
-		}
-	} 
+			public static void main(String[] args) throws Exception
+			{
+				//引导类加载器负责加载Java核心库
+				//输出：null 
+				//引导类加载器不是Java实现，所以为null
+				System.out.println(Class.forName("java.lang.String").
+						getClassLoader());			
+				//自定义类A由系统类加载器加载
+				//输出：sun.misc.Launcher$AppClassLoader@1e3118a
+				System.out.println(Class.forName("info.jason.classloader.A").
+						getClassLoader());
+			}
+		} 
 
 	
 
@@ -44,11 +46,11 @@ Java中的类加载器可以分为两类，一种是Java虚拟机自带类加载
 除了引导类加载器之外，所有的类加载器都有一个父类加载器。对于系统提供的类加载器来说，系统类加载器的父类加载器是扩展类加载器，而扩展类加载器的父类加载器是引导类加载器；对于开发人员编写的类加载器来说，其父类加载器是加载此类加载器 Java 类的类加载器。因为类加载器 Java 类如同其它的 Java 类一样，也是要由类加载器来加载的。一般来说，开发人员编写的类加载器的父类加载器是系统类加载器。类加载器通过这种方式组织起来，形成树状结构。树的根节点就是引导类加载器。图 1中给出了一个典型的类加载器树状组织结构示意图，其中的箭头指向的是父类加载器。
 
 ![图1](/media/images/classloader.jpg)  
-图1 
+<center>图1</center> 
 ##**2 Java类加载器的父亲委托机制（Parent Delegation）** 
 在父亲委托机制中，各个类加载器按照父子关系形成书树形结构，除了引导类加载器之外，其余类加载器有且只有一个父加载器。通俗的讲，就是某个特定的类加载器在接到加载类的请求时，首先将加载任务委托给父类加载器，依次递归，如果父类加载器可以完成类加载任务，就成功返回；只有父类加载器无法完成此加载任务时，才自己去加载。 如果某个类加载器能够加载一个类，那么该类加载器就称为定义类加载器；定义类加载器及其所有子类加载器都被称作初始类加载器。
 
-ClassLoader的loadClass()代码分析 
+ClassLoader的loadClass()代码分析: 
 
 	// 检查类是否已被装载
 	Class c = findLoadedClass(name);
@@ -137,7 +139,8 @@ ClassLoader的loadClass()代码分析
 	public class A
 	{
 		public A(){
-			System.out.println("A is loaded by: " + this.getClass().getClassLoader());
+			System.out.println("A is loaded by: " + 
+			this.getClass().getClassLoader());
 		}
 	} 
 ###测试类
@@ -181,7 +184,7 @@ ClassLoader的loadClass()代码分析
 	A is loaded by: loader1
 说明A类由自定义加载器所加载。 
 
-2.运行`java -cp .;c:\classloader\loader1 TestClass`，表示修改系统classpath路径为c:\classloader\loader1，则执行结果为：
+2.运行`java -cp .;c:\classloader\loader1 TestClass`，表示修改系统classpath路径为当前目录和c:\classloader\loader1目录，则执行结果为：
 
 	A is loaded by: sun.misc.Launcher$AppClassLoader@513cf0
 	A is loaded by: sun.misc.Launcher$AppClassLoader@513cf0 
@@ -215,7 +218,9 @@ ClassLoader的loadClass()代码分析
 > 应用都有一个对应的类加载器实例。该类加载器也使用代理模式，所不同的是它是首先尝试去加载某个类，如果找不到再代理给父类加载器。这与一般类加载器的顺序是相反的。这是
 > Java Servlet 规范中的推荐做法，其目的是使得 Web 应用自己的类的优先级高于 Web
 > 容器提供的类。这种代理模式的一个例外是：Java 核心库的类是不在查找范围之内的。这也是为了保证 Java 核心库的类型安全。
-> 绝大多数情况下，Web 应用的开发人员不需要考虑与类加载器相关的细节。下面给出几条简单的原则： 
+> 绝大多数情况下，Web 应用的开发人员不需要考虑与类加载器相关的细节。 
+
+下面给出几条简单的原则： 
 
 > - 每个 Web 应用自己的 Java类文件和使用的库的 jar 包，分别放在 WEB-INF/classes和WEB-INF/lib目录下面。 
 
