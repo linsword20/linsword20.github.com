@@ -8,6 +8,7 @@ tags:
 - float
 - C/C++
 ---
+{% include JB/setup %}
 这两天研究《程序员面试宝典》的时候，碰到一道关于C/C++中float的题:  
 	
 	#include <iostream> 

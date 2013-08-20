@@ -8,6 +8,7 @@ tags:
 - A记录
 jack: <a href="http://weibo.com/u/1978104272">Jack</a>
 ---
+{% include JB/setup %}
 
 真是不接触不知道，一接触吓一跳！昨晚本来是要告诉{{ page.jack }}怎么为自己的blog绑定独立域名的，结果不幸成了自己的网络知识普及课。
 在申请了一个example.info的域名，他希望blog的域名可以是blog.example.info，一下子我也蒙了，下意识感觉应该不可以的，却说不出个所以然来，
