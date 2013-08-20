@@ -1,0 +1,33 @@
+---
+layout: page
+title: Learn & Live
+tagline: Supporting tagline
+---
+{% include JB/setup %}
+
+<ul class="article-list">
+{% for post in site.posts limits 5 %}
+	<li>
+		<header>
+			<h2><a href="{{post.url}}">{{post.title}}</a></h2>
+		</header>
+		<aside>
+			<ul>
+				<li>{{post.date | date:"20%y年%m月%d日" }}</li>
+				<li>{{post.categories }}</li>
+				<li class="tag-box">
+					{% assign tags_list = post.tags %}  
+  				    {% include JB/tags_list %}
+  	  			</li>
+			</ul>			 
+		</aside>
+		<div class="article-content">
+			{{ post.content|strip_html |  truncate:200}}
+		</div>
+	</li>
+{% endfor %}
+</ul>
+
+
+
+

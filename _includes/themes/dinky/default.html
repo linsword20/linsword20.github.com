@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<meta name="author" content="{{ site.author.name }}" />
+		<title>{{ page.title }}</title>
+
+		<link rel="stylesheet" href="{{ ASSET_PATH }}/css/styles.css">
+		<!-- <link rel="stylesheet" href="{{ ASSET_PATH }}/css/prettify.css"> -->
+		<link rel="stylesheet" href="{{ ASSET_PATH }}/css/sons-of-obsidian.css">
+
+		<script type="text/javascript" src="{{ ASSET_PATH }}/js/prettify.js"></script>
+		<script type="text/javascript" src="{{ ASSET_PATH }}/js/lang-yaml.js"></script>
+		<script src="{{ ASSET_PATH }}/js/scale.fix.js"></script>
+		<script src="{{ ASSET_PATH }}/js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		{% include JB/analytics %}
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="left-col">
+				<div class="logo">
+					<a href="{{ HOME_PATH }}">{{ site.title }}</a>
+				</div>
+
+				<ul class="top-nav" id='topNav'>
+					<!-- {% assign pages_list = site.pages %}
+					{% assign group = 'navigation' %} -->
+					{% assign pages_list = site.pages %}
+					{% include JB/pages_list %}
+				</ul>
+
+			</header>
+
+			<section class="main-col">
+				<div class="main-inner">
+					{{ content }}
+				</div>
+			</section>
+			<aside class="right-col">
+				<h2>Categories</h2>
+				<ul class="categories-list">
+					{% assign categories_list = site.categories %}
+					{% include JB/categories_list %}
+				</ul>
+
+				<h2>Contact</h2>
+				{% if site.author %}
+				<div class="misc vcard">
+					<ul>
+						{% if site.author.email %}
+						<li class="contact">
+							<address>
+								<span class="fn email">{{ site.author.email }}</span>
+							</address>
+						</li>
+						{% endif %}
+						{% if site.author.github %}
+						<li class="github">
+							<a href="http://github.com/{{ site.author.github }}/" rel="me">{{ site.author.name }}@Github</a>
+						</li>
+						{% endif %}
+						{% if site.author.twitter %}
+						<li class="twitter">
+							<a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a>
+						</li>
+						{% endif %}
+						{% if site.author.facebook %}
+						<li class="facebook">
+							<a href="http://facebook.com/{{ site.author.facebook }}/" rel="me">facebook.com/{{ site.author.facebook }}</a>
+						</li>
+						{% endif %}
+						{% if site.author.douban %}
+						<li class="facebook">
+							<a href="http://www.douban.com/{{ site.author.douban }}/" rel="me">{{ site.author.name }}@Douban</a>
+						</li>
+						{% endif %}
+
+					</ul>
+				</div><!-- misc -->
+				{% endif %}
+				
+				
+				<h2>I'm Reading</h2>
+				<div>
+					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="178" height="208" id="passing" > <param name="movie" value="http://www.douban.com/doushow/61633006/dolist_latest_book_4_2_small_nologo_noself/doushow.swf" /> <param name="quality" value="high" /> <param name="scale" value="noscale"/> <param name="align" value="tl"/> <param name="wmode" value="transparent"/> <embed src="http://www.douban.com/doushow/61633006/dolist_latest_book_4_2_small_nologo_noself/doushow.swf" wmode="transparent" quality="high" width="178" height="208" name="passing" scale="noscale" align="tl" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /> </object>
+				</div>
+				
+				
+				<h2>Want to Read</h2>
+				<div>
+					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="178" height="208" id="passing" > <param name="movie" value="http://www.douban.com/doushow/61633006/wishlist_latest_book_4_2_small_nologo_noself/doushow.swf" /> <param name="quality" value="high" /> <param name="scale" value="noscale"/> <param name="align" value="tl"/> <param name="wmode" value="transparent"/> <embed src="http://www.douban.com/doushow/61633006/wishlist_latest_book_4_2_small_nologo_noself/doushow.swf" wmode="transparent" quality="high" width="178" height="208" name="passing" scale="noscale" align="tl" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /> </object>
+				</div>
+
+			</aside>
+			<footer class="footer">				
+		Copyright © 2013 linsword20
+			</footer>
+		</div>
+		<!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('pre').addClass('prettyprint');
+				 window.prettyPrint && prettyPrint();
+			});
+		</script>
+		<div style="display:none">
+</div>
+	</body>
+</html>
+
