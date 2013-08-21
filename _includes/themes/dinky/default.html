@@ -110,6 +110,13 @@
 			$(document).ready(function() {
 				$('pre').addClass('prettyprint');
 				 window.prettyPrint && prettyPrint();
+				 
+				 if(null != $("#topNav")){
+					$("#topNav > li").first().css('width: 70px');
+					$("#topNav > li").first().next().css('width: 120px');
+					$("#topNav > li").first().next().next().css('width: 120px');
+					$("#topNav > li").last().css('width: 60px');
+					}
 			});
 		</script>
 		<div style="display:none">
