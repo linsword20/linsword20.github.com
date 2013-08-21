@@ -2,5 +2,13 @@
 theme:
   name: dinky
 ---
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#topNav > li").first().css('width: 70px');
+	$("#topNav > li").first().next().css('width: 120px');
+	$("#topNav > li").first().next().next().css('width: 120px');
+	$("#topNav > li").last().css('width: 60px');
+})
+</script>
 {% include JB/setup %}
 {% include themes/dinky/default.html %}

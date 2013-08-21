@@ -1,10 +1,8 @@
 markdown:  rdiscount
 permalink: /:year/:month/:day/:title 
-
 auto: true
-
 paginate: 5
-
+production_url : blog.linsword20.info
 title : Jason
 author :
   name : Jason

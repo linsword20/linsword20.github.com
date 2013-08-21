@@ -297,7 +297,7 @@ td, th {
 
 .top-nav > li {
 	/*border-bottom: 1px dashed #ddd;*/
-	border-bottom: 1px solid rgba(78, 68, 60, 0.1);;
+	border-bottom: 1px solid rgba(78, 68, 60, 0.1);
 }
 
 .top-nav > li > a {
@@ -468,7 +468,9 @@ td, th {
 		float: left;
 	}
 	.top-nav {
+		/*width: 100%; 对于手机导航栏重叠的修改Jason*/
 		margin-bottom: -1px;
+		
 	}
 	.top-nav > li {
 		border-right: 1px solid rgba(78, 68, 60, 0.1);
@@ -558,9 +560,7 @@ td, th {
 }
 	.top-nav li{
 		/*float: none;*/
-		width:33%;
-		
-		
+		/*width:70px;*/
 		}
 	.top-nav > li > a {
 		text-align:center;
