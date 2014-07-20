@@ -69,13 +69,13 @@ Call为对其他批处理程序调用的命令，第一个参数为file_copy.bat
 ## 配置Job
 为了满足服务器B以一分钟为周期，获取A服务器中的xml文件，更新到B服务器上，需要每分钟执行批处理程序一次，因此需要为其建立Job，步骤如下（以Win7为例）：  
 ###1. 在开始菜单，输入“任务计划程序”，运行计划任务程序
-![Imgur](http://i.imgur.com/cq0yb.png)  
+![Imgur](/assets/images/cq0yb.png)  
 ###2. 创建任务，输入名称，描述，选择不管用户是否登录都要运行
-![Imgur](http://i.imgur.com/XBZYl.png)  
+![Imgur](/assets/images/XBZYl.png)  
 ###3. 选择“触发器”标签，新建，按下图修改参数，确定
-![Imgur](http://i.imgur.com/buwQA.png)  
+![Imgur](/assets/images/buwQA.png)  
 ###4.选择“操作”标签，新建，添加main.bat批处理程序(路径以实际为准)
-![Imgur](http://i.imgur.com/qgIcA.png)  
+![Imgur](/assets/images/qgIcA.png)  
 ###5. 选择“设置”标签
-![Imgur](http://i.imgur.com/8CNaU.png) 
+![Imgur](/assets/images/8CNaU.png) 
 
