@@ -82,7 +82,7 @@ ul {
 blockquote {
 	margin: 5px 0;
 	padding: 8px 0 8px 10px;
-	font-size:14px;	
+	font-size:14px;
 	position: relative;
 font-family: Georgia,"Times New Roman",Times,"STFangsong","KaiTi",serif;
 font-weight: 100;
@@ -184,7 +184,7 @@ td, th {
 	display: inline-block;
 }
 .tag-box a {
-	background-color: rgb(241,108,50);
+	background-color: #0088cc;
 	opacity: 0.7;
 	color: #fff;
 	padding: 2px 5px;
@@ -470,7 +470,7 @@ td, th {
 	.top-nav {
 		/*width: 100%; 对于手机导航栏重叠的修改Jason*/
 		margin-bottom: -1px;
-		
+
 	}
 	.top-nav > li {
 		border-right: 1px solid rgba(78, 68, 60, 0.1);
@@ -574,4 +574,28 @@ td, th {
 		font-size: 12pt;
 		color: #444;
 	}
+}
+/*分页信息*/
+.paginator {
+font: 14px Arial,Helvetica,sans-serif;
+color: #AAA;
+margin: 20px 0;
+line-height: 150%;
+display: block;
+}
+
+.paginator a,.paginator span{
+padding: 0 4px;
+margin: 2px;
+text-decoration: none;
+}
+
+.paginator .current-page {
+color: white;
+background: #0088cc;
+}
+
+.paginator a:hover{
+color: white;
+background: #0088cc;
 }
